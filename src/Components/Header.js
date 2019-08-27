@@ -35,15 +35,16 @@ class Header extends Component {
                 //onChange={handleChange}
                 className="Tabs"
                 indicatorColor="primary"
-                textColor="white"
+                textColor="secondary"
                 centered
-            >
-                <Tab label="About Me" />
+              > 
+                <Tab label="About Me"/>
                 <Tab label="Experience" />
                 <Tab label="Hobbies" />
             </Tabs>
-            <h1 style={{position: "absolute", paddingTop: this.state.height/2, paddingLeft: this.state.width/2,  zIndex: 13}}>{data.main.name}</h1>
-            <img className="HeaderImage" src="./header-background.webp" alt="Scenary" style={{width: this.state.width - 2, height: this.state.height, objectFit: "cover"}} />
+            <h1 className="NameHeader" style={{marginTop: this.state.height/2 - 100}}>I'm {data.main.name}</h1>
+            <h2 className="DescriptionText" style={{marginTop: this.state.height/2}}>{data.main.description}</h2>
+            <img className="HeaderImage" src="./header-background.webp" alt="Scenary" style={{width: this.state.width, height: this.state.height, objectFit: "cover"}} />
         </div>
     );
   }

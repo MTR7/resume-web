@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import data from '../../public/resumeData.json';
+import "../Styles/About.css";
 import "../Styles/Cards.css";
 
 class About extends Component {
@@ -8,15 +13,37 @@ class About extends Component {
 
     return (
       <Paper className="Cards">
-        <h1>About Me</h1>
-        <p>{data.main.bio}</p>
+        <Card> 
+          <CardContent>
+            <Grid container spacing={2} direction="column">
+              <Grid item>
+                <h1 className="MainHeader">About Me</h1>
+              </Grid>
+              <Grid item>
+                <Typography variant="body1">
+                {data.main.bio}
+                </Typography>
+              </Grid>
+            </Grid>
+          </CardContent>
+        </Card>
+
+
+
+
+        <Card>
+          <CardContent>
+            <h1 className="MainHeader">About Me</h1>
+            <p>{data.main.bio}</p>
+          </CardContent>
+        </Card>
         
-        <h1>Contact Details</h1>
-        <p>{data.main.name} <br/>
-           {data.main.address.street} <br/>
-           {data.main.address.city}, {data.main.address.state} {data.main.address.zip}<br/>
-           {data.main.phone}<br/>
-           {data.main.email}</p>
+        <Card>
+          <CardContent>
+            <h1 className="MainHeader">Contact Details</h1>
+            <a href={data.main.email}>Email Me</a>
+          </CardContent>
+        </Card>
       </Paper>
     );
   }
