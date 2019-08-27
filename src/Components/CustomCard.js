@@ -1,20 +1,41 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import data from '../../public/resumeData.json';
-import "../Styles/About.css";
 import { CardActions, Button } from '@material-ui/core';
 
-class About extends Component {
+class CustomCard extends Component {
+
+  constructor(props) {
+      super(props);
+      this.state = {
+        data = props.data,
+        actions = props.actions
+      };
+    }
+
   render() {
 
     return (
         <Card> 
           <CardContent>
             <Grid container spacing={2} direction="column">
+              {
+                this.state.data.map(function(i) {
+                  console.log('test');
+                  return  <div>
+                            <Grid item>
+                              <h1 className="MainHeader">{i.header}</h1>
+                            </Grid>
+                            <Grid item>
+                              <Typography variant="body1">
+                              {i.body}
+                              </Typography>
+                            </Grid> 
+                          </div>
+                })
+              }
               <Grid item>
                 <h1 className="MainHeader">About Me</h1>
               </Grid>
@@ -38,8 +59,8 @@ class About extends Component {
             <Button href={data.main.email}>Email Me</Button>
           </CardActions>
         </Card>
-    );
+      );
+    }
   }
-}
-
-export default About;
+  
+  export default CustomCard;

@@ -9,6 +9,8 @@ import Projects from './Components/Projects';
 import CyberSecurityActivities from './Components/CyberSecurityActivities';
 import Work from './Components/Work';
 import Volunteering from './Components/Volunteering';
+import { Paper } from '@material-ui/core';
+import "./Styles/Cards.css";
 
 class App extends Component {
   render() {
@@ -16,13 +18,15 @@ class App extends Component {
       <div className="App">
         <Header/>
           <div className="Content">
-            <About/>
-            <Education/>
-            <Skills/>
-            <CyberSecurityActivities/>
-            <Work/>
-            <Projects/>
-            <Volunteering/>
+            <Paper className="CardsHolder">
+              <About/>
+              <Education/>
+              <Skills/>
+              <CyberSecurityActivities/>
+              <Work/>
+              <Projects/>
+              <Volunteering/>
+            </Paper>
           </div>
         <Footer/>
       </div>
