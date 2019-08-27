@@ -1,3 +1,15 @@
+# Resume Template
+
+This was created because I liked Tim Bakers' [resume template](https://github.com/tbakerx/react-resume-template), but I did not like how it 
+used other jquery components and such. I wanted to build a react only website.
+
+
+
+# React Default README Stuff
+
+This will eventually be removed....
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

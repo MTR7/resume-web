@@ -1,0 +1,18 @@
+.HeaderImage {
+    height: 100%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.Root {
+    flex-grow: 1;
+}
+
+.Tabs {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 10;
+}
