@@ -10,10 +10,11 @@ import CyberSecurityActivities from './Components/CyberSecurityActivities';
 import Work from './Components/Work';
 import Volunteering from './Components/Volunteering';
 import "./Styles/Cards.css";
-import { isBrowser, isMobile } from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 import Snackbar from '@material-ui/core/Snackbar';
-import { amber } from '@material-ui/core/colors';
-
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+import Fab from '@material-ui/core/Fab';
 class App extends Component {
   
   getWidth() {
@@ -39,23 +40,39 @@ class App extends Component {
   }
 
   render() {
+    configureAnchors({offset: -50, scrollDuration: 200})
     return (
       <div className="App">
-        <Header/>
+        <ScrollableAnchor id={'home'}>
+          <Header/>
+        </ScrollableAnchor>
           <div className="Content" style={this.getStyle()}>
-            <About/>
-            <Education/>
-            <Skills/>
-            <CyberSecurityActivities/>
-            <Work/>
-            <Projects/>
-            <Volunteering/>
+            <ScrollableAnchor id={'about'}>
+              <About/>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'education'}>
+              <Education/>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'skills'}>
+              <Skills/>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'cyberActivities'}>
+              <CyberSecurityActivities/>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'work'}>
+              <Work/>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'projects'}>
+              <Projects/>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'volunteering'}>
+              <Volunteering/>
+            </ScrollableAnchor>
           </div>
         <Footer/>
         <Snackbar anchorOrigin={{ vertical: "bottom", horizontal:"center"}}
                   message="This site is under-construction. This is being done in between hw assignments. Please excuse the mess."
                   open={true}
-                  style={{backgroundColor: amber}}
                   />
       </div>
     );

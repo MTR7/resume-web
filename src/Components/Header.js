@@ -31,16 +31,18 @@ class Header extends Component {
     return (
         <div className="Root">
              <Tabs
-                //value={value}
-                //onChange={handleChange}
                 className="Tabs"
                 indicatorColor="primary"
-                textColor="secondary"
+                textColor="primary"
                 centered
               > 
-                <Tab label="About Me"/>
-                <Tab label="Experience" />
-                <Tab label="Hobbies" />
+                <Tab href="#about" label="About Me"/>
+                <Tab href="#education" label="Education" />
+                <Tab href="#skills" label="Skills" />
+                <Tab href="#cyberActivities" label="Cyber Activities" />
+                <Tab href="#work" label="Work" />
+                <Tab href="#projects" label="Projects" />
+                <Tab href="#volunteering" label="Volunteering" />
             </Tabs>
             <h1 className="NameHeader" style={{marginTop: this.state.height/2 - 100}}>I'm {data.main.name}</h1>
             <h2 className="DescriptionText" style={{marginTop: this.state.height/2}}>{data.main.description}</h2>
