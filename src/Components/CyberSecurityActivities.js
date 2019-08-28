@@ -14,22 +14,26 @@ class CyberSecurityActivities extends Component {
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
-                <h1 className="MainHeader">Cyber Security Activities</h1>
+                <Typography variant="h2">Cyber Security Activities</Typography>
               </Grid>
               {
                 data.resume.cyber_activities.map(function(act, index) {
                   return <Grid item key={"cyberActivities" + index}>
-                          <Typography variant="body1">
+                          <Typography variant="body1" style={{fontWeight: "bold"}}>
                             {act.title}
                           </Typography>
                           <Typography variant="body2">
                             {act.years} <br/>
                           </Typography>
+                          <ul>
                           {act.description.map(function(desc, index) {
-                            return  <Typography variant="body2" key={index}>
-                                      {desc} <br/>
-                                    </Typography>
-                          })}
+                              return  <li key={index}>
+                                        <Typography variant="body2">
+                                          {desc}
+                                        </Typography>
+                                      </li>
+                            })}
+                          </ul>
                         </Grid>
                 })
               }

@@ -4,7 +4,6 @@
     "occupation":"Penetration Tester",
     "description":"Pen Tester. Software Developer. System Admin.",
     "image":"profilepic.webp",
-    "bio":"I am a senior at New Mexico Institute of Mining and Technology pursing a bachelor and master of science in Computer Science with a focus in cybersecurity. My interests include rootkits, user authentication technologies, security audits, and software exploitation. When I am not working on cybersecurity related work, I am either reconfiguring servers at home, programming, dirt biking, or on a search and rescue mission.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "https://mailhide.io/e/p6gqY",
     "website": "https://oparkins.com",
@@ -23,7 +22,7 @@
     ]
   },
   "resume":{
-    "objective": "I am seeking an internship to which I can apply my proven leadership and technical skills to. I am familiar with managing teams of various sizes and I specialize in security audits, software exploitation, and user authentication technologies.",
+    "objective": "I am seeking a full time position where I can apply my proven leadership and technical skills. I bring value by combining my expertise in software development, vulnerability analysis, and exploit development together. This value is further increased with my extensive system administration and network management experience. I am a self-motivated individual that thrives in an environment where new and unique challenges arise that require continual learning.",
     "skillmessage":"I am success-oriented, self-motivated, and a natural leader with strong communication and presentation skills. I quickly adapt to new technology and changing project parameters.",
     "education":[
       {
@@ -35,11 +34,28 @@
       {
         "school":"New Mexico Institute of Mining and Technology",
         "degree":"B.S. in Computer Science",
-        "graduated":"Expected May 2019",
+        "graduated":"Completed May 2019",
         "description":"Awards: Federal CyberCorps Scholarship for Service, Tech Scholar, Presidential Scholarship, Legislative Lottery Scholarship"
       }
     ],
     "work":[
+      {
+        "company":"Idaho National Laboratory",
+        "title":"Cyber Security Research and Development Intern",
+        "years":"Summer 2019",
+        "description": [
+            "Conducted a software and hardware vulnerability analysis on a commercial mobile router and delivered a report detailing vulnerabilities and mitigation suggestions",
+
+            "Enhanced a vulnerability analysis tracking application by removing bugs and adding new features to both the client- and server-side components.",
+
+            "Analyzed the likelihood of a vulnerability being present in a proprietary SSH implementation by reverse engineering a PowerPC-based firmware image using Ghidra",
+
+            "Developed proof of concept exploit code for Urgent/11 vulnerabilities targeting VxWorks OS.",
+
+            "Created an Ansible script to deploy and manage VMs on an ESXi host."
+          
+        ]
+      },
       {
         "company":"Idaho National Laboratory",
         "title":"Technical Intern",
@@ -47,16 +63,16 @@
         "description": [
             "Developed attack vectors and completed preliminary analysis during a voting machine audit. Worked to explore potential attack vectors with team of cybersecurity researchers.",
 
-            "Provided analysis of tools like Nmap and Ettercap to support the California Energy Systems for the 21st Century research efforts. The analysis included networking scanning tools on industrial control systems.",
+            "Provided comparative analysis of tools like Nmap and Ettercap to support the California Energy Systems for the 21st Century research efforts. The analysis included networking scanning tools on industrial control systems.",
 
-            "Supported the dynamic line rating (DLR) project funded by the Wind Energy Technologies Office. Created a cybersecurity report detailing vulnerabilities and possible mitigations for the DLR solution."
+            "Supported the dynamic line rating (DLR) project funded by the Wind Energy Technologies Office. Reported vulnerabilities and possible mitigations for the DLR solution."
           
         ]
       },
       {
         "company":"New Mexico Tech",
         "title":"Parallel Cluster System Administrator",
-        "years":"January 2018 - Current",
+        "years":"January 2018 - Present",
         "description": [
             "Designed a cluster to use IPMI to manage physical nodes, provision with DigitalRebar, and deploy OpenStack through Kolla for the Secure System Administration class.",
             
@@ -67,14 +83,14 @@
       {
         "company":"Earth and Environmental Science Department, New Mexico Tech",
         "title":"Software Engineer",
-        "years":"October 2015 - Current",
+        "years":"October 2015 - Present",
         "description": [
             "Debugging a parallel 3D finite-element solver that couples groundwater flow, heat, and transport equations.",
-            
+
             "Maintains multiple high performance computers. Provides regular updates and support for a multiple systems running different Linux and Windows operating systems.",
             
             "Inherited a previously developed software solution that calculates the density of water based on temperature and pressure. Converted the code from FORTRAN to MATLAB to use the solvers present in MATLAB. This enabled other faculty members to use the equation of state code in their own programs.",
-            
+
             "Converted MATLAB code that calculated the stress on ice sheets to FORTRAN. This was to increase the speed of the calculations by decreasing the overhead of running the library in MATLAB."
         ]
       },
@@ -83,7 +99,17 @@
         "title":"Software Engineer Intern",
         "years":"May 2017 - August 2017",
         "description": [
-          "Worked with a team to migrate existing iOS application to the Universal Windows Platform. Created code generators written in Java to generate base entities in C#. Implemented platform-specific classes that supported the application"
+          "Worked with a team to migrate existing iOS application to the Universal Windows Platform. Created code generators written in Java to generate base entities in C#. Implemented platform-specific classes that supported the application."
+        ]
+      },
+      {
+        "company":"Sandia National Laboratories",
+        "title":"Year-Round Technical Intern",
+        "years":"November 2014 – May 2017",
+        "description": [
+          "Developed the AutoTest Management Program for the Nuclear Accident Analysis Division. This software is used to test the results of MELCOR, a nuclear reactor modeling program, against earlier results to check for consistency of the application.",
+
+          "Set up a continuous integration system using Jenkins CI. This system enabled MELCOR developers to accelerate the software development lifecycle of MELCOR."
         ]
       }
     ],
@@ -91,34 +117,33 @@
       [
         {
           "title": "Security Audits",
-          "years": "Spring 2016 - Current",
+          "years": "Spring 2016 - Present",
           "description": [
-            "Performs network security audits for various organizations around New Mexico",
+            "Perform network security audits for various organizations around New Mexico",
 
-            "Audits include social engineering an organization’s employees, performing network scans and host discovery tasks, and creating remediation reports that detail the vulnerabilities found and possible actions to mitigate the issues"
-          ]
-        },
-        {
-          "title": "Department of Energy CyberForce Red Team",
-          "years": "Spring 2016 - Current",
-          "description": [
-            "Participated with Sandia National Laboratories’ Red Team for the competition",
-
-            "Duties included practicing exploits against various operating systems, preparing scripts for post-exploitation, and learning ICS vulnerabilities"
+            "Audits include social engineering an organization’s employees, performing network scans, and creating remediation reports detailing vulnerabilities found and possible mitigation actions."
           ]
         },
         {
           "title": "NSA Codebreaker",
-          "years": "Spring 2016 - Current",
+          "years": "Winter 2016, Winter 2018",
           "description": [
-            "Completed all tasks in the 2018 competition. Helped other students start several tasks and guide them through the competition.",
+            "One of twenty individuals to complete all tasks in the 2018 competition",
 
-            "Participated in the 2016 competition and was offered a letter of recongnition from NSA"
+            "Participated in the 2016 competition and was offered a letter of recognition from the NSA"
+          ]
+        },
+        {
+          "title": "Department of Energy CyberForce Red Team",
+          "years": "Winter 2018",
+          "description": [
+            "Participated on Sandia National Laboratories’ Red Team for the competition",
+            "Practiced exploits against various operating systems, prepared scripts for post-exploitation, and learned ICS vulnerabilities"
           ]
         },
         {
           "title": "Wireless CTF",
-          "years": "Spring 2016 - Current",
+          "years": "Summer 2018",
           "description": [
             "Participated in Idaho National Laboratory’s Wireless CTF Competition",
 
@@ -130,15 +155,17 @@
       [
         {
           "title": "Socorro Search and Rescue",
-          "years": "January 2016 - Current",
-          "description": "Vice President of the student-based team. Responsibilities consist of coordinating with State Police and supervising various school activities. Completed New Mexico’s State Certification for search and rescue and Operations Section Chief training"
+          "years": "January 2016 - Present",
+          "description": [
+            "Vice President of the student-based team. Responsibilities consist of coordinating with State Police and supervising various school activities. Completed New Mexico’s State Certification for search and rescue and Operations Section Chief training"
+          ]
         }
       ],
     "skills":
       [
         {
           "title": "Languages",
-          "subtext": "C#, C++, C, Java, FORTRAN, MATLAB, Javascript, Ruby, Bash, Python, SQL, Assembly"
+          "subtext": " C#, C++, C, Java, FORTRAN, MATLAB, Javascript, Ruby, Bash, Python, SQL, Assembly (x86/PPC)"
         },
         {
           "title": "Web Development",
@@ -146,23 +173,27 @@
         },
         {
           "title": "Markup Languages",
-          "subtext": "LaTeX"
+          "subtext": "LaTeX, Markdown, YAML"
         },
         {
           "title": "Development Tools",
-          "subtext": "GNU Make, Visual Studio, Vim, Docker, Inno Setup Compiler, Jenkins CI, Microsoft Unit Test"
+          "subtext": "GNU Make, Visual Studio, Vim, Docker, Jenkins CI, Ansible, git, Subversion"
         },
         {
-          "title": "Revision Control",
-          "subtext": "git, Subversion"
+          "title": "Reverse Engineering Tools",
+          "subtext": "Binary Ninja, Ghidra, gdb"
+        },
+        {
+          "title": "Hardware Interface Tools",
+          "subtext": "Shikra, JTAGulator, Bus Pirate"
         },
         {
           "title": "Microcontrollers",
-          "subtext": "Arduino, Netduino, Raspberry Pi, Arbotix"
+          "subtext": "Arduino, Netduino, Raspberry Pi"
         },
         {
           "title": "Other",
-          "subtext": "Computer hardware, Setting up and maintaining complex server systems, Kernel development (xv6)"
+          "subtext": "Setting up and maintaining complex server systems, Kernel development (xv6)"
         }
       ],
       "projects": [
@@ -180,7 +211,7 @@
           "description": "I am working on my first motorcycle rebuild project. It is a 1975 Honda CB200T motorcycle. I am using this project to learn more about vehicle rebuilds. Currently, I am finishing the electrical system on the motorcycle."
         },
         {
-          "title":"Reference Monitor with xv6 (Work In Progress)",
+          "title":"Reference Monitor with xv6",
           "description":"xv6 is a unix-like that is used to teach operating systems. My semester project for the graduate level operating systems class is to implemenet a reference monitor within the xv6 operating system. This project is being completed this semester and I'll provide updates as more progress is completed.",
           "url":""
         },

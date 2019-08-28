@@ -13,18 +13,13 @@ class Education extends Component {
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
-                <h1 className="MainHeader">Education</h1>
-              </Grid>
-              <Grid item>
-                <Typography variant="body1">
-                {data.resume.skillmessage}
-                </Typography>
+              <Typography variant="h2">Education</Typography>
               </Grid>
 
               {
                 data.resume.education.map(function(edu, index) {
                   return <Grid item key={"education" + index}>
-                          <Typography variant="body1">
+                          <Typography variant="body1" style={{fontWeight: "bold"}}>
                             {edu.school}
                           </Typography>
                           <Typography variant="body2">

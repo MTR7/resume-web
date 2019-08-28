@@ -15,14 +15,11 @@ class About extends Component {
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
-                <h1 className="MainHeader">About Me</h1>
+                <Typography variant="h2">About Me</Typography>
               </Grid>
               <Grid item>
                 <Typography variant="body1">
                   {data.resume.objective}
-                  <br/>
-                  <br/>
-                  {data.main.bio}
                   <br/>
                   <br/>
                   The best way to contact me is through <a href={data.main.email}>email</a>.

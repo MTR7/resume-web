@@ -13,13 +13,16 @@ class Skills extends Component {
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
-                <h1 className="MainHeader">Skills</h1>
+                <Typography variant="h2">Skills</Typography>
               </Grid>
+              <Typography variant="body2">
+                {data.resume.skillmessage}
+              </Typography>
 
               {
                 data.resume.skills.map(function(skill, index) {
                   return <Grid item key={"skills" + index}>
-                          <Typography variant="body1">
+                          <Typography variant="body1" style={{fontWeight: "bold"}}>
                             {skill.title}
                           </Typography>
                           <Typography variant="body2">

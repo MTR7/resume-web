@@ -13,19 +13,29 @@ class Work extends Component {
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
-                <h1 className="MainHeader">Work</h1>
+                <Typography variant="h2">Work</Typography>
               </Grid>
               {
                 data.resume.work.map(function(work, index) {
                   return <Grid item key={"work" + index}>
-                          <Typography variant="body1">
+                          <Typography variant="body1" style={{fontWeight: "bold"}} >
                             {work.company}
                           </Typography>
-                          <Typography variant="body2">
+                          <Typography variant="body2" style={{fotStyle: "italic"}}>
                             {work.title} <br/>
-                            {work.years} <br/>
-                            {work.description} <br/>
                           </Typography>
+                          <Typography variant="body2">
+                            {work.years} <br/>
+                          </Typography>
+                          <ul>
+                          {work.description.map(function(desc, index) {
+                            return  <li key={index}>
+                                      <Typography variant="body2">
+                                        {desc}
+                                      </Typography>
+                                    </li>
+                          })}
+                          </ul>
                         </Grid>
                 })
               }

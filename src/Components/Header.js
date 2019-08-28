@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { isBrowser } from "react-device-detect";
 import data from '../../public/resumeData.json';
 import '../Styles/Header.css';
+import { Typography } from '@material-ui/core';
 
 class Header extends Component {
 
@@ -26,6 +28,28 @@ class Header extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
+  getHeaderSize() {
+    if(isBrowser)
+    {
+      return "h1";
+    }
+    else
+    {
+      return "h3";
+    }
+  }
+
+  getAdjustmentSize() {
+    if(isBrowser)
+    {
+      return "100";
+    }
+    else
+    {
+      return "50";
+    }
+  }
+
   render() {
 
     return (
@@ -46,8 +70,8 @@ class Header extends Component {
                 <Tab href="#projects" label="Projects" />
                 <Tab href="#volunteering" label="Volunteering" />
             </Tabs>
-            <h1 className="NameHeader" style={{marginTop: this.state.height/2 - 100}}>I'm {data.main.name}</h1>
-            <h2 className="DescriptionText" style={{marginTop: this.state.height/2}}>{data.main.description}</h2>
+            <Typography className="NameHeader" variant={this.getHeaderSize()} style={{marginTop: this.state.height/2 - this.getAdjustmentSize()}}>I'm {data.main.name}</Typography>
+            <Typography className="DescriptionText" variant="subtitle1" style={{marginTop: this.state.height/2}}>{data.main.description}</Typography>
             <img className="HeaderImage" src="./header-background.webp" alt="Scenary" style={{width: this.state.width, height: this.state.height, objectFit: "cover"}} />
         </div>
     );

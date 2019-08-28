@@ -8,24 +8,23 @@ import '../Styles/Cards.css'
 
 class Projects extends Component {
   render() {
-
     return (
         <Card className="ResumeSection"> 
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
-                <h1 className="MainHeader">Projects</h1>
+              <Typography variant="h2">Projects</Typography>
               </Grid>
 
               {
                 data.resume.projects.map(function(proj, index) {
                   return <Grid item key={"projects" + index}>
-                          <Typography variant="body1">
+                          <Typography variant="body1" style={{fontWeight: "bold"}}>
                             {proj.title}
                           </Typography>
                           <Typography variant="body2">
-                            {proj.description} <br/>
-                            {proj.url} <br/>
+                            {proj.description} <br/>                    
+                            {proj.url}                           
                           </Typography>
                         </Grid>
                 })
