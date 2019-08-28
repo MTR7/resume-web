@@ -2,7 +2,7 @@
   "main": {
     "name":"Owen Parkins",
     "occupation":"Penetration Tester",
-    "description":"I am seeking an internship to which I can apply my proven leadership and technical skills to. I am familiar with managing teams of various sizes and I specialize in security audits, software exploitation, and user authentication technologies.",
+    "description":"Pen Tester. Software Developer. System Admin.",
     "image":"profilepic.webp",
     "bio":"I am a senior at New Mexico Institute of Mining and Technology pursing a bachelor and master of science in Computer Science with a focus in cybersecurity. My interests include rootkits, user authentication technologies, security audits, and software exploitation. When I am not working on cybersecurity related work, I am either reconfiguring servers at home, programming, dirt biking, or on a search and rescue mission.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
@@ -23,6 +23,7 @@
     ]
   },
   "resume":{
+    "objective": "I am seeking an internship to which I can apply my proven leadership and technical skills to. I am familiar with managing teams of various sizes and I specialize in security audits, software exploitation, and user authentication technologies.",
     "skillmessage":"I am success-oriented, self-motivated, and a natural leader with strong communication and presentation skills. I quickly adapt to new technology and changing project parameters.",
     "education":[
       {

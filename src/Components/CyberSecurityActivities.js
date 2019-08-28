@@ -4,12 +4,13 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import '../Styles/Cards.css'
 
 class CyberSecurityActivities extends Component {
   render() {
 
     return (
-      <Card> 
+      <Card className="ResumeSection">
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>

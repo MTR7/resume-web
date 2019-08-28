@@ -25,6 +25,8 @@
 }
 
 .Content {
-  padding-left: 1em;;
+  padding-left: 1em;
   padding-right: 1em;
+  margin: 2em auto;
+  background-color: #F5F5F5;
 }

@@ -6,13 +6,13 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import data from '../../public/resumeData.json';
 import "../Styles/About.css";
-import { CardActions, Button } from '@material-ui/core';
+import "../Styles/Cards.css";
 
 class About extends Component {
   render() {
 
     return (
-        <Card> 
+        <Card className="ResumeSection"> 
           <CardContent>
             <Grid container spacing={2} direction="column">
               <Grid item>
@@ -20,23 +20,17 @@ class About extends Component {
               </Grid>
               <Grid item>
                 <Typography variant="body1">
-                {data.main.bio}
-                </Typography>
-              </Grid>
-
-              <Grid item>
-                <h1 className="MainHeader">Contact Details</h1>
-              </Grid>
-              <Grid item>
-                <Typography variant="body1">
-                {data.main.contactInfo}
+                  {data.resume.objective}
+                  <br/>
+                  <br/>
+                  {data.main.bio}
+                  <br/>
+                  <br/>
+                  The best way to contact me is through <a href={data.main.email}>email</a>.
                 </Typography>
               </Grid>
             </Grid>
           </CardContent>
-          <CardActions>
-            <Button href={data.main.email}>Email Me</Button>
-          </CardActions>
         </Card>
     );
   }
