@@ -35,6 +35,7 @@ class Header extends Component {
                 indicatorColor="primary"
                 textColor="primary"
                 centered
+                variant="scrollable"
               > 
                 <Tab href="#about" label="About Me"/>
                 <Tab href="#education" label="Education" />
