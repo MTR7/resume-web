@@ -22,8 +22,8 @@ class Education extends Component {
               </Grid>
 
               {
-                data.resume.education.map(function(edu) {
-                  return <Grid item>
+                data.resume.education.map(function(edu, index) {
+                  return <Grid item key={"education" + index}>
                           <Typography variant="body1">
                             {edu.school}
                           </Typography>

@@ -18,8 +18,8 @@ class Volunteering extends Component {
           </Grid>
 
           {
-            data.resume.volunteering.map(function(proj) {
-              return <Grid item>
+            data.resume.volunteering.map(function(proj, index) {
+              return <Grid item key={"volunteering" + index}>
                       <Typography variant="body1">
                         {proj.title}
                       </Typography>

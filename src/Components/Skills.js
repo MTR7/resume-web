@@ -17,8 +17,8 @@ class Skills extends Component {
               </Grid>
 
               {
-                data.resume.skills.map(function(skill) {
-                  return <Grid item>
+                data.resume.skills.map(function(skill, index) {
+                  return <Grid item key={"skills" + index}>
                           <Typography variant="body1">
                             {skill.title}
                           </Typography>

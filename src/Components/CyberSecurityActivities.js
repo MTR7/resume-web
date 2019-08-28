@@ -17,16 +17,16 @@ class CyberSecurityActivities extends Component {
                 <h1 className="MainHeader">Cyber Security Activities</h1>
               </Grid>
               {
-                data.resume.cyber_activities.map(function(act) {
-                  return <Grid item>
+                data.resume.cyber_activities.map(function(act, index) {
+                  return <Grid item key={"cyberActivities" + index}>
                           <Typography variant="body1">
                             {act.title}
                           </Typography>
                           <Typography variant="body2">
                             {act.years} <br/>
                           </Typography>
-                          {act.description.map(function(desc) {
-                            return  <Typography variant="body2">
+                          {act.description.map(function(desc, index) {
+                            return  <Typography variant="body2" key={index}>
                                       {desc} <br/>
                                     </Typography>
                           })}

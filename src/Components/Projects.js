@@ -18,8 +18,8 @@ class Projects extends Component {
               </Grid>
 
               {
-                data.resume.projects.map(function(proj) {
-                  return <Grid item>
+                data.resume.projects.map(function(proj, index) {
+                  return <Grid item key={"projects" + index}>
                           <Typography variant="body1">
                             {proj.title}
                           </Typography>

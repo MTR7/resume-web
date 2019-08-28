@@ -16,8 +16,8 @@ class Work extends Component {
                 <h1 className="MainHeader">Work</h1>
               </Grid>
               {
-                data.resume.work.map(function(work) {
-                  return <Grid item>
+                data.resume.work.map(function(work, index) {
+                  return <Grid item key={"work" + index}>
                           <Typography variant="body1">
                             {work.company}
                           </Typography>
