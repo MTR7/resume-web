@@ -14,7 +14,7 @@ import { isBrowser } from "react-device-detect";
 import Snackbar from '@material-ui/core/Snackbar';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { configureAnchors } from 'react-scrollable-anchor'
-import Fab from '@material-ui/core/Fab';
+
 class App extends Component {
   
   getWidth() {
