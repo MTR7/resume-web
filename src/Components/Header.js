@@ -35,7 +35,9 @@ class Header extends Component {
                 indicatorColor="primary"
                 textColor="primary"
                 centered
+                value={false}
               > 
+                <Tab href="#home" label="Home"/>
                 <Tab href="#about" label="About Me"/>
                 <Tab href="#education" label="Education" />
                 <Tab href="#skills" label="Skills" />
