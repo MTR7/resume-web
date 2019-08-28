@@ -1,13 +1,37 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import data from '../../public/resumeData.json';
 
 class Work extends Component {
   render() {
 
     return (
-      <Paper>
-        Work
-      </Paper>
+      <Card> 
+          <CardContent>
+            <Grid container spacing={2} direction="column">
+              <Grid item>
+                <h1 className="MainHeader">Work</h1>
+              </Grid>
+              {
+                data.resume.work.map(function(work) {
+                  return <Grid item>
+                          <Typography variant="body1">
+                            {work.company}
+                          </Typography>
+                          <Typography variant="body2">
+                            {work.title} <br/>
+                            {work.years} <br/>
+                            {work.description} <br/>
+                          </Typography>
+                        </Grid>
+                })
+              }
+            </Grid>
+          </CardContent>
+        </Card>
     );
   }
 }

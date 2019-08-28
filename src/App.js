@@ -11,14 +11,23 @@ import Work from './Components/Work';
 import Volunteering from './Components/Volunteering';
 import { Paper } from '@material-ui/core';
 import "./Styles/Cards.css";
+import { isBrowser, isMobile } from "react-device-detect";
 
 class App extends Component {
+  
+  getWidth() {
+    if(isBrowser)
+      return "70%";
+    else
+      return "100%";
+  }
+
   render() {
     return (
       <div className="App">
         <Header/>
           <div className="Content">
-            <Paper className="CardsHolder">
+            <Paper className="CardsHolder" style={{width: this.getWidth()}}>
               <About/>
               <Education/>
               <Skills/>
