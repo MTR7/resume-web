@@ -14,10 +14,11 @@ class Skills extends Component {
             <Grid container spacing={2} direction="column">
               <Grid item>
                 <Typography variant="h2">Skills</Typography>
+                <Typography variant="body2">
+                 {data.resume.skillmessage}
+               </Typography>
               </Grid>
-              <Typography variant="body2">
-                {data.resume.skillmessage}
-              </Typography>
+              
 
               {
                 data.resume.skills.map(function(skill, index) {

@@ -20,6 +20,9 @@ class Footer extends Component {
 
            <p>
               &copy; Copyright 2019 Owen Parkins
+              <br/>
+              Made with React. See <a href="https://github.com/oparkins/resume-web">GitHub</a> for source<br/>
+              Template idea from <a href="https://github.com/tbakerx/react-resume-template">Tim Baker</a>
            </p>
 
         </div>
