@@ -11,7 +11,6 @@ import Work from './Components/Work';
 import Volunteering from './Components/Volunteering';
 import "./Styles/Cards.css";
 import { isBrowser } from "react-device-detect";
-import Snackbar from '@material-ui/core/Snackbar';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { configureAnchors } from 'react-scrollable-anchor'
 
