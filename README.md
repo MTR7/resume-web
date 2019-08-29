@@ -16,7 +16,7 @@ I will be continuously updating this website with all my new projects because I 
 longer have a space for them on my resume. 
 
 ## Want to use it?
-If you like the website format, just fork it. The main data is stored in the [resumeData.json](./public/resumeData.json) file. This is so that you can easily and quickly update information on the website without having to recompile.
+If you like the website format, just fork it. The main data is stored in the [resumeData.json](./public/resumeData.json) file.
 
 I just ask that my name is somewhere visible on the site and there is a link back to the GitHub repo. Much like what I did for Tim Baker in the footer.
 
