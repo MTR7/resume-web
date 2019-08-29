@@ -73,8 +73,10 @@ class Header extends Component {
                 <Tab href="#skills" label="Skills" />
                 <Tab href="#cyberActivities" label="Cyber Activities" />
                 <Tab href="#work" label="Work" />
+                <Tab href="#publishedWork" label="Published Work" />
                 <Tab href="#projects" label="Projects" />
                 <Tab href="#volunteering" label="Volunteering" />
+                
             </Tabs>
           </BrowserView>
           <MobileView>
@@ -106,11 +108,14 @@ class Header extends Component {
                     <Button href="#work" onClick={() => this.setState({mobileView: false})} color="inherit">Work</Button>
                   </ListItem>
                   <ListItem>
+                    <Button href="#publishedWork" onClick={() => this.setState({mobileView: false})} color="inherit">Published Work</Button>
+                  </ListItem>
+                  <ListItem>
                     <Button href="#projects" onClick={() => this.setState({mobileView: false})} color="inherit">Projects</Button>
                   </ListItem>
                   <ListItem>
                     <Button href="#volunteering" onClick={() => this.setState({mobileView: false})} color="inherit">Volunteering</Button>
-                  </ListItem>
+                  </ListItem>                  
                 </List>
               </ExpansionPanelDetails>
             </ExpansionPanel>

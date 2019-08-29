@@ -220,6 +220,26 @@
           "description":"AuctionBoost is software that is used for managing the check-in and check-out process at auctions. It enables organizations to provide quicker and more professional service to their guests. The software is capable of tracking guests and items throughout an auction. When guests first sign in on this software, they are given a bid card number as described by the auction's settings inside the software. When the guests check out, they can know what they bought right away – auctions no longer need to use other data sheet software to track their auction.",
           "url":""
         }
+      ],
+      "presentations": [
+        {  
+          "title": "Enhancing Embedded Device Vulnerability Analysis through Hardware Interfaces",
+          "location": "Idaho National Laboratory's Intern Expo 2019",
+          "url": "/posters/INLInternEXPO2019.pdf",
+          "releaseID": "INL/EXP-19-55035"
+        },
+        {
+          "title": "Cyber Security Concerns for Dynamic Line Rating",
+          "location": "Idaho National Laboratory's Intern Expo 2018",
+          "url": "/posters/OwenParkinsInternExpo2018_DLR.pdf",
+          "releaseID": "INL-EXP--18-50485"
+        },
+        {
+          "title": "Auto Discovery of Network Nodes through Passive and Active Methods",
+          "location": "Idaho National Laboratory's Intern Expo 2018",
+          "url": "/posters/OwenParkinsPosterInternEXPO2018.pdf",
+          "releaseID": "INL-EXP--18-50513"
+        }
       ]
   }
 }

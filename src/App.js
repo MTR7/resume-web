@@ -9,6 +9,7 @@ import Projects from './Components/Projects';
 import CyberSecurityActivities from './Components/CyberSecurityActivities';
 import Work from './Components/Work';
 import Volunteering from './Components/Volunteering';
+import PublishedWork from './Components/PublishedWork';
 import "./Styles/Cards.css";
 import { isBrowser } from "react-device-detect";
 import ScrollableAnchor from 'react-scrollable-anchor'
@@ -61,12 +62,15 @@ class App extends Component {
             <ScrollableAnchor id={'work'}>
               <Work/>
             </ScrollableAnchor>
+            <ScrollableAnchor id={'publishedWork'}>
+              <PublishedWork/>
+            </ScrollableAnchor>
             <ScrollableAnchor id={'projects'}>
               <Projects/>
             </ScrollableAnchor>
             <ScrollableAnchor id={'volunteering'}>
               <Volunteering/>
-            </ScrollableAnchor>
+            </ScrollableAnchor>            
           </div>
         <Footer/>
       </div>
