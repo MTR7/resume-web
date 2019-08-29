@@ -14,9 +14,10 @@ class Footer extends Component {
 
      <div className="row">
         <div className="twelve columns">
-           <ul className="social-links">
-              {networks}
-           </ul>
+          <div>
+            <a href="https://github.com/oparkins"><img src="./github.png" alt="GitHub" style={{width:"36px", paddingRight: "1em"}}/></a>
+            <a href="https://keybase.io/oparkins"><img src="./keybase.svg" alt="Keybase" style={{width:"36px"}}/></a>
+          </div>
 
            <p>
               &copy; Copyright 2019 Owen Parkins

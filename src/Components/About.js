@@ -22,7 +22,9 @@ class About extends Component {
                   {data.resume.objective}
                   <br/>
                   <br/>
-                  The best way to contact me is through <a href={data.main.email}>email</a>.
+                  The best way to contact me is through <a href={data.main.email}>email</a>. The link will take you to a reCAPTCHA site first. This is to prevent spam. 
+                  <br/>
+                  Also take a look at my <a href="https://github.com/oparkins">GitHub</a> and <a href="https://keybase.io/oparkins">Keybase</a> accounts! 
                 </Typography>
               </Grid>
             </Grid>
