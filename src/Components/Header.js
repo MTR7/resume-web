@@ -4,13 +4,12 @@ import Tab from '@material-ui/core/Tab';
 import { isBrowser, BrowserView, MobileView } from "react-device-detect";
 import data from '../../public/resumeData.json';
 import '../Styles/Header.css';
-import { Typography, List, ListItemText, Button } from '@material-ui/core';
+import { Typography, List, Button } from '@material-ui/core';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ListItem from '@material-ui/core/ListItem';
-import Link from '@material-ui/core/Link';
 
 class Header extends Component {
 
@@ -119,6 +118,11 @@ class Header extends Component {
           </MobileView>
           <Typography className="NameHeader" variant={this.getHeaderSize()} style={{marginTop: this.state.height/2 - this.getAdjustmentSize()}}>I'm {data.main.name}</Typography>
           <Typography className="DescriptionText" variant="subtitle1" style={{marginTop: this.state.height/2}}>{data.main.description}</Typography>
+          <div className="Icons" style={{marginTop: this.state.height/2 + 40, width: "100%"}}>
+            <a href="https://github.com/oparkins"><img src="./github.png" alt="GitHub" style={{width:"36px", paddingRight: "1em"}}/></a>
+            <a href="https://keybase.io/oparkins"><img src="./keybase.svg" alt="Keybase" style={{width:"36px"}}/></a>
+          </div>
+          
           <img className="HeaderImage" src="./header-background.webp" alt="Scenary" style={{width: this.state.width, height: this.state.height, objectFit: "cover"}} />
         </div>
     );

@@ -70,10 +70,6 @@ class App extends Component {
             </ScrollableAnchor>
           </div>
         <Footer/>
-        <Snackbar anchorOrigin={{ vertical: "bottom", horizontal:"center"}}
-                  message="This site is under-construction. This is being done in between hw assignments. Please excuse the mess."
-                  open={true}
-                  />
       </div>
     );
   }
