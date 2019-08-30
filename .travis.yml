@@ -5,12 +5,16 @@ install:
 - npm install
 script:
 - npm run build
+after_success:
+- rm -rf doc
+- mv build doc
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: "$GITHUB_TOKEN"
   keep_history: true
-  target_branch: gh-pages
+  on:
+    branch: master
 env:
   global:
     secure: cV15+kCrE9kCqPucz2WIlHk3sYvI5Iw4PrknlrssqWV8YuqFeFzp9b6uXWx/E8j1uA7cmpxwMKh61aWBwq01z9Am0RFl0P/Kd2VevMgo1K1R9GY3DdfXq1ehf4ZTx/2CfvbbYZsa+M+GLBHmg8+x1LObHojfT6+qE3ntP+nN9D2OtR7sliw37wr5pGgTxM8d32L2xhiNgvbcRkq4XARjMWeA080nFORkhe5eFJ0JoXW2j/YmHC95mg0EcKWXSuAYwHDWrrNx6Kbach+bbH5GtTLIOoQCnv177oSdOPBeDSEaVnVLlcxuACISsuq4ewPIWaowL3O1TcQxAWCW8dqiK8k01hvOgGJXYOKRAbuCP34Ib43wbELfRjb1XG1ZRWqWGIN/KqQZhJzA/9aGB+PiwFq1umukcBtAL2P3tma/k9nhByLqoX6kForhi1dhlZ1YyOt3r8dX6tad427MPXliXNRv+g+EQHy+I2DGc4k888ZarOk46GLrzbkHge/IWFSJsBJTCvX6+242cNhyir5joyPugT55L+y/UsZRNyOBNuyXmGZDwLKKriqgLT7TNHtGpFSGFRoWcxvy8vze4yy89dA3xG6dPVEo4ibnoxYcGjLs7qtO25z9vOmvr/zzyol5pPxyqwwn6l9+HNsvr+LiDblT+PAjF1ZGOWOizZmVdWY=
