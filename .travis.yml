@@ -6,14 +6,16 @@ install:
 script:
 - npm run build
 after_success:
-- rm -rf doc
-- mv build doc
+- rm -rf docs
+- mv build docs
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
     secure: "$GITHUB_TOKEN"
   keep_history: true
+  file_glob: true
+  file: docs/*
   on:
     branch: master
     tags: true
