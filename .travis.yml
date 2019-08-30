@@ -6,8 +6,8 @@ install:
 script:
 - npm run build
 after_success:
-- rm -rf doc
-- mv build doc
+- rm -rf docs
+- mv build docs
 deploy:
   provider: pages
   skip_cleanup: true
