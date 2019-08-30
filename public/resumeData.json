@@ -199,25 +199,32 @@
       "projects": [
         {
           "title":"Sundial (Work In Progress)",
-          "description":"Sundial is software designed to help manage time and tasks. It provides a simple user interface that enables users to keep on task throughout their day. Sundial will prioritize tasks so that the nearest deadline is at the top of the list. This application is continuously subjected to redesigns with new user interfaces and new libraries. Sundial is used as a testing ground for new technologies.",
+          "years": "January 2014 - Present",
+          "description":"Sundial is designed to help manage time and tasks. It provides a simple user interface that enables users to keep on task throughout their day. Sundial will prioritize tasks so that the nearest deadline is at the top of the list. This application is continuously subjected to redesigns with new user interfaces and new libraries. Sundial is used as a testing ground for new technologies. I am currently rewriting it and looking forward to releasing it publically on GitHub.",
           "url":"https://sundial.nibious.com"
         },
         {
           "title": "House Infrastructure",
-          "description":"I am using Ubuntu (next time will be CentOS) as my base operating system and a hypervisor. I am using a virtualized pfSense as my router. pfSense provides DHCP, DNS, OpenVPN, and more services for my home network. On the same physical machine, connected via a virtual bridge, I use lxc containers for Unifi controller and Plex media server. I plan to use lxc containers to provide DHCP and DNS instead of using pfSense. This will allow the network to function if pfSense fails."
+          "years": "Fall 2018 - Present",
+          "description":"I am using Ubuntu (next time will be CentOS) as my base operating system and a hypervisor. I am using a virtualized pfSense as my router. pfSense provides DHCP, DNS, OpenVPN, and more services for my home network. On the same physical machine, connected via a virtual bridge, I use lxc containers for Unifi controller and Plex media server. I plan to use lxc containers to provide DHCP and DNS instead of using pfSense. This will allow the network to function if pfSense fails.",
+          "url":""
         },
         {
           "title": "1975 Honda CB200T Rebuild",
-          "description": "I am working on my first motorcycle rebuild project. It is a 1975 Honda CB200T motorcycle. I am using this project to learn more about vehicle rebuilds. Currently, I am finishing the electrical system on the motorcycle."
-        },
-        {
-          "title":"Reference Monitor with xv6",
-          "description":"xv6 is a unix-like that is used to teach operating systems. My semester project for the graduate level operating systems class is to implemenet a reference monitor within the xv6 operating system. This project is being completed this semester and I'll provide updates as more progress is completed.",
+          "years": "January 2018 - Present",
+          "description": "I am working on my first motorcycle rebuild project. It is a 1975 Honda CB200T motorcycle. I am using this project to learn more about vehicle rebuilds. Currently, I am finishing the electrical system on the motorcycle.",
           "url":""
         },
         {
           "title":"AuctionBoost",
-          "description":"AuctionBoost is software that is used for managing the check-in and check-out process at auctions. It enables organizations to provide quicker and more professional service to their guests. The software is capable of tracking guests and items throughout an auction. When guests first sign in on this software, they are given a bid card number as described by the auction's settings inside the software. When the guests check out, they can know what they bought right away – auctions no longer need to use other data sheet software to track their auction.",
+          "years": "January 2015 - Present",
+          "description":"AuctionBoost is software that is used for managing the check-in and check-out process at auctions. It enables organizations to provide quicker and more professional service to their guests. The software is capable of tracking guests and items throughout an auction. When guests first sign in on this software, they are given a bid card number as described by the auction's settings inside the software. When the guests check out, they can know what they bought right away – auctions no longer need to use other data sheet software to track their auction. This software will be open-sourced soon. The repository needs to be cleaned up.",
+          "url":""
+        },
+        {
+          "title":"Reference Monitor with xv6",
+          "years": "Fall 2018",
+          "description":"xv6 is a unix-like that is used to teach operating systems. This team-based project for the graduate level operating systems class is to implemenet a reference monitor within the xv6 operating system. This project was completed in Spring 2019. We found that it was immpossible to implement a true reference monitor in xv6. In fact, xv6 already has a reference monitor implemented in the form of virtual memory. Originally, our concept of a reference monitor was a actually device or implementation. While working on this project, we found that the reference monitor is a concept, not an implementation. While we did not succeed with our original goal, we came away with a deeper understanding of a reference monitor. ",
           "url":""
         }
       ],
